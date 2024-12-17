@@ -1,10 +1,12 @@
 import { Dropdown, MenuProps } from 'antd';
 import { LogoutOutlined } from '@ant-design/icons';
 import Avatar from '@/assets/images/avatar.png';
+import { useNavigate } from 'react-router-dom';
 
 type MenuKey = 'logout';
 
 const Header = () => {
+  const navigate = useNavigate();
   const items: MenuProps['items'] = [
     {
       key: 'logout',
@@ -14,7 +16,9 @@ const Header = () => {
   ];
 
   const handleLogout = () => {
-    console.log('logout');
+    // TODO clear store
+    localStorage.removeItem('loginInfo');
+    navigate('/login');
   };
 
   const onClick: MenuProps['onClick'] = (e) => {
@@ -57,7 +61,8 @@ const Header = () => {
               alt="Avatar"
               className="rounded-1/2 bg-light-500 overflow-hidden object-cover"
             />
-            <span className="text-15px min-w-50px ml-2 truncate">admin</span>
+            <span
+              className="text-15px min-w-50px ml-2 truncate">{JSON.parse(localStorage.getItem('loginInfo') || 'admin')}</span>
           </div>
         </Dropdown>
       </div>
