@@ -24,7 +24,10 @@ const Login = () => {
     setLoading(true);
     const values = await form.validateFields();
     // TODO set store
-    if (values.username === initData.username && values.password === initData.password) {
+    if (
+      values.username === initData.username &&
+      values.password === initData.password
+    ) {
       setLoading(false);
       message.success('登录成功');
       navigate('/');
@@ -54,7 +57,6 @@ const Login = () => {
                 message: 'Please input your email',
               },
             ]}
-
           >
             <Input
               size="large"
@@ -77,9 +79,7 @@ const Login = () => {
           >
             <Input
               size="large"
-              prefix={
-                <LockOutlined className="site-form-item-icon" />
-              }
+              prefix={<LockOutlined className="site-form-item-icon" />}
               type="password"
               placeholder="Password"
             />
@@ -91,7 +91,7 @@ const Login = () => {
           type="primary"
           htmlType="submit"
           disabled={disabled}
-          className="w-full mt-5px rounded-5px tracking-2px"
+          className="mt-5px rounded-5px tracking-2px w-full"
           loading={isLoading}
           onClick={login}
         >

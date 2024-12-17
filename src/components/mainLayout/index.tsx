@@ -40,7 +40,6 @@ const MainLayout = () => {
     }
   }, []);
 
-
   const renderWrapper = () => {
     if (!localStorage.getItem('loginInfo')) {
       return;
@@ -61,12 +60,7 @@ const MainLayout = () => {
     );
   };
 
-  return (
-    <>
-      {renderWrapper()}
-    </>
-
-  );
+  return <>{renderWrapper()}</>;
 };
 
 export default MainLayout;

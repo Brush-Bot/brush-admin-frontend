@@ -61,8 +61,9 @@ const Header = () => {
               alt="Avatar"
               className="rounded-1/2 bg-light-500 overflow-hidden object-cover"
             />
-            <span
-              className="text-15px min-w-50px ml-2 truncate">{JSON.parse(localStorage.getItem('loginInfo') || 'admin')}</span>
+            <span className="text-15px min-w-50px ml-2 truncate">
+              {JSON.parse(localStorage.getItem('loginInfo') || 'admin')}
+            </span>
           </div>
         </Dropdown>
       </div>
