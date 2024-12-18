@@ -1,0 +1,84 @@
+{
+  "success": true,
+  "message": "Success",
+  "code": 200,
+  "data": [
+    {
+      "id": "cm4plx3350001auuqefteol6j",
+      "name": "年卡",
+      "description": "365天季卡激活码套餐",
+      "createdAt": "2024-12-15T12:53:29.361Z",
+      "updatedAt": "2024-12-15T12:53:29.361Z",
+      "amount": 365,
+      "price": 1,
+      "remark": "365天季卡激活码套餐",
+      "type": "CODE"
+    },
+    {
+      "id": "cm4plwjr00000auuq8ixbx1kk",
+      "name": "季卡",
+      "description": "90天季卡激活码套餐",
+      "createdAt": "2024-12-15T12:53:04.380Z",
+      "updatedAt": "2024-12-15T12:53:04.380Z",
+      "amount": 80,
+      "price": 1,
+      "remark": "90天季卡激活码套餐",
+      "type": "CODE"
+    },
+    {
+      "id": "cm4plxods0002auuqkr27r220",
+      "name": "体验卡",
+      "description": "一个月30天体验卡套餐",
+      "createdAt": "2024-12-15T12:53:56.961Z",
+      "updatedAt": "2024-12-15T12:53:56.961Z",
+      "amount": 10,
+      "price": 1,
+      "remark": "一个月30天体验卡套餐",
+      "type": "CODE"
+    },
+    {
+      "id": "cm4plysu40003auuqsqsb53dj",
+      "name": "100积分",
+      "description": "100积分面额充值",
+      "createdAt": "2024-12-15T12:54:49.389Z",
+      "updatedAt": "2024-12-15T12:54:49.389Z",
+      "amount": 100,
+      "price": 1,
+      "remark": "积分充值",
+      "type": "POINT"
+    },
+    {
+      "id": "cm4plz9wg0004auuqqibjamrh",
+      "name": "500积分",
+      "description": "500积分面额充值",
+      "createdAt": "2024-12-15T12:55:11.501Z",
+      "updatedAt": "2024-12-15T12:55:11.501Z",
+      "amount": 500,
+      "price": 48,
+      "remark": "积分充值",
+      "type": "POINT"
+    },
+    {
+      "id": "cm4pm05420005auuq0x0zafq0",
+      "name": "1000积分",
+      "description": "1000积分面额充值",
+      "createdAt": "2024-12-15T12:55:51.953Z",
+      "updatedAt": "2024-12-15T12:55:51.953Z",
+      "amount": 1000,
+      "price": 88,
+      "remark": "积分充值",
+      "type": "POINT"
+    },
+    {
+      "id": "cm4pm2atr0006auuqef3qqjqa",
+      "name": "5000积分",
+      "description": "5000积分面额充值",
+      "createdAt": "2024-12-15T12:57:32.087Z",
+      "updatedAt": "2024-12-15T12:57:32.087Z",
+      "amount": 5000,
+      "price": 428,
+      "remark": "积分充值",
+      "type": "POINT"
+    }
+  ]
+}

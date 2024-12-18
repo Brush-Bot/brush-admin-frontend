@@ -51,9 +51,7 @@ const MainLayout = () => {
           <Head />
           <Content className={'px-[16px]'}>
             <Breadcrumb className="my-[16px]" items={breadcrumbItems} />
-            <div className={'min-h-[360px] rounded-[8px] bg-white p-[14px]'}>
-              <Outlet />
-            </div>
+            <Outlet />
           </Content>
         </Layout>
       </Layout>

@@ -6,9 +6,11 @@ import 'dayjs/locale/en';
 import router from '@/router.tsx';
 import { isSystemDarkMode } from '@/utils';
 import '@/style/base.css';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 dayjs.locale('en');
 const { defaultAlgorithm, darkAlgorithm } = theme;
+const queryClient = new QueryClient();
 
 const App = () => {
   return (
@@ -19,7 +21,9 @@ const App = () => {
           algorithm: [isSystemDarkMode() ? darkAlgorithm : defaultAlgorithm],
         }}
       >
-        <RouterProvider router={router} />
+        <QueryClientProvider client={queryClient}>
+          <RouterProvider router={router} />
+        </QueryClientProvider>
       </ConfigProvider>
     </div>
   );
